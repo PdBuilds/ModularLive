@@ -804,7 +804,8 @@ export default function PremiumModularHomesLanding() {
                   className="relative overflow-hidden rounded-2xl shadow-lg group cursor-pointer"
                 >
                   <img
-                    src={`/modern-modular-home.png?height=400&width=600&query=modern modular home ${index % 3 === 0 ? "interior living room" : index % 3 === 1 ? "kitchen" : "bedroom"}`}
+                    // src={`/modern-modular-home.png?height=400&width=600&query=modern modular home ${index % 3 === 0 ? "interior living room" : index % 3 === 1 ? "kitchen" : "bedroom"}`}
+                    src="/images/modern-modular-home.png"
                     alt={`Gallery ${index + 1}`}
                     className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
@@ -843,21 +844,21 @@ export default function PremiumModularHomesLanding() {
                   role: "Sustainable Living Advocate",
                   text: "The engineering excellence is remarkable. Our container home has exceeded every expectation for quality and comfort.",
                   rating: 5,
-                  image: "/professional-woman-diverse.png",
+                  image: "/images/professional-woman-diverse.png",
                 },
                 {
                   name: "James Chen",
                   role: "Tech Entrepreneur",
                   text: "From concept to move-in in 24 hours. The smart home integration is seamless and the build quality is exceptional.",
                   rating: 5,
-                  image: "/professional-man.png",
+                  image: "/images/professional-man.png",
                 },
                 {
                   name: "Emma Rodriguez",
                   role: "Architect",
                   text: "As an architect, I'm impressed by the attention to detail and innovative design. This is the future of housing.",
                   rating: 5,
-                  image: "/professional-woman-architect.png",
+                  image: "/images/professional-woman-architect.png",
                 },
               ].map((testimonial, index) => (
                 <motion.div
@@ -875,7 +876,7 @@ export default function PremiumModularHomesLanding() {
                   <p className="text-gray-600 dark:text-gray-300 mb-8 text-lg italic">"{testimonial.text}"</p>
                   <div className="flex items-center">
                     <img
-                      src={testimonial.image || "/placeholder.svg"}
+                      src={testimonial.image || "/imges/placeholder.svg"}
                       alt={testimonial.name}
                       className="w-12 h-12 rounded-full mr-4"
                     />
