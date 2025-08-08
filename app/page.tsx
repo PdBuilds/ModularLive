@@ -271,15 +271,25 @@ export default function PremiumModularHomesLanding() {
                 }
                 transition={{ duration: 3, ease: "easeInOut" }}
               >
-                <div className="absolute inset-4 bg-white/20 rounded-xl flex items-center justify-center">
-                  <motion.div
-                    animate={isUnfolding ? { scale: [1, 0, 1], rotate: [0, 180, 360] } : {}}
-                    transition={{ duration: 3, delay: 0.5 }}
-                    className="text-white text-6xl font-bold"
-                  >
-                    {isUnfolding ? "🏠" : "📦"}
-                  </motion.div>
-                </div>
+                <div className="absolute inset-4 bg-white/20 rounded-xl flex items-center justify-center overflow-hidden">
+                {isUnfolding ? (
+                  <video
+                    src="/videos/Inside40ftContainerhouse.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    className="w-full h-full object-cover rounded-xl"
+                  />
+                ) : (
+                  <video
+                    src="/videos/TruckLoading.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    className="w-full h-full object-cover rounded-xl"
+                  />
+                )}
+              </div>
               </motion.div>
 
               {/* Unfold Stages */}
