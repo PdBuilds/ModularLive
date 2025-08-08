@@ -90,7 +90,7 @@ export default function PremiumModularHomesLanding() {
             </motion.div>
 
             <div className="hidden lg:flex items-center space-x-8">
-              {["Products", "Technology", "Process", "Gallery", "Contact"].map((item, index) => (
+              {["Products", "Technology", "Process", "Features", "Gallery", "Testimonials", "Contact"].map((item, index) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(index + 2)}
@@ -148,7 +148,7 @@ export default function PremiumModularHomesLanding() {
         <section id="hero" className="h-screen flex items-center justify-center relative overflow-hidden">
           <motion.div style={{ y: heroY, opacity: heroOpacity }} className="container mx-auto px-6 text-center z-10">
             <motion.h1
-              initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
               className="text-6xl md:text-8xl font-thin mb-8 tracking-tight"
@@ -156,7 +156,7 @@ export default function PremiumModularHomesLanding() {
               Unfold
               <br />
               <span className="font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent">
-                Tomorrow
+                Living
               </span>
             </motion.h1>
 
