@@ -3,8 +3,8 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   output: 'export',
-  basePath: isProd ? '/ModularLive' : '',
-  assetPrefix: isProd ? '/ModularLive/' : '',
+  basePath: '/ModularLive',
+  assetPrefix: '/ModularLive/'
 };
 
 export default nextConfig;

@@ -815,7 +815,7 @@ export default function PremiumModularHomesLanding() {
                 >
                   <img
                     // src={`/modern-modular-home.png?height=400&width=600&query=modern modular home ${index % 3 === 0 ? "interior living room" : index % 3 === 1 ? "kitchen" : "bedroom"}`}
-                    src="/images/modern-modular-home.png"
+                    src="ModularLive/images/modern-modular-home.png"
                     alt={`Gallery ${index + 1}`}
                     className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
@@ -854,21 +854,21 @@ export default function PremiumModularHomesLanding() {
                   role: "Sustainable Living Advocate",
                   text: "The engineering excellence is remarkable. Our container home has exceeded every expectation for quality and comfort.",
                   rating: 5,
-                  image: "/images/professional-woman-diverse.png",
+                  image: "ModularLive/images/professional-woman-diverse.png",
                 },
                 {
                   name: "James Chen",
                   role: "Tech Entrepreneur",
                   text: "From concept to move-in in 24 hours. The smart home integration is seamless and the build quality is exceptional.",
                   rating: 5,
-                  image: "/images/professional-man.png",
+                  image: "ModularLive/images/professional-man.png",
                 },
                 {
                   name: "Emma Rodriguez",
                   role: "Architect",
                   text: "As an architect, I'm impressed by the attention to detail and innovative design. This is the future of housing.",
                   rating: 5,
-                  image: "/images/professional-woman-architect.png",
+                  image: "ModularLive/images/professional-woman-architect.png",
                 },
               ].map((testimonial, index) => (
                 <motion.div
